@@ -1,0 +1,6 @@
+httpx==0.27.0
+pyserial==3.5
+RPi.GPIO==0.7.1
+picamera2==0.3.19
+hx711==1.1.2.3
+python-dotenv==1.0.1
