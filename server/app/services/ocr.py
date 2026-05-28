@@ -11,15 +11,10 @@ from app.config import settings
 
 pytesseract.pytesseract.tesseract_cmd = settings.tesseract_cmd
 
-# Supported date patterns on Korean food packaging
 _DATE_PATTERNS = [
-    # YYYY.MM.DD / YYYY/MM/DD / YYYY-MM-DD
     r"(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})",
-    # YY.MM.DD
     r"(\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})",
-    # YYYYMMDD (8 digits)
     r"(20\d{2})(\d{2})(\d{2})",
-    # YYYY년 MM월 DD일
     r"(20\d{2})\s*년\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일",
 ]
 
